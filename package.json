@@ -1,0 +1,45 @@
+{
+  "name": "vue-proj",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite serve --mode development",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.5",
+    "@vueuse/core": "^8.9.1",
+    "@wangeditor/editor": "^5.1.5",
+    "@wangeditor/editor-for-vue": "^5.1.12",
+    "axios": "^0.27.2",
+    "echarts": "^5.3.3",
+    "element-plus": "^2.2.0",
+    "js-cookie": "^3.0.1",
+    "mockjs": "^1.1.0",
+    "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.0.14",
+    "sass": "^1.52.3",
+    "sass-loader": "^13.0.0",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.16",
+    "vuedraggable": "^4.1.0",
+    "vxe-table": "^4.2.8",
+    "xe-utils": "^3.5.4"
+  },
+  "devDependencies": {
+    "@types/mockjs": "^1.0.6",
+    "@types/node": "^18.0.0",
+    "@types/nprogress": "^0.2.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vue-tsc": "^0.34.7"
+  },
+  "description": "This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
