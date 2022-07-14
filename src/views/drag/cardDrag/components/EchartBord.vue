@@ -9,7 +9,6 @@
 </template>
 
 <script setup lang="ts">
-import { tr } from "element-plus/es/locale";
 import { PropType, reactive, toRefs, watch } from "vue";
 interface ListType {
   name: string;

@@ -9,25 +9,6 @@ const routes = [
       title: '登录页'
     }
   },
-  // {
-  //   path: '/',
-  //   name: 'root',
-  //   component: () => import('@/views/layout/layout.vue'),
-  //   meta: {
-  //     title: '登录页'
-  //   },
-  //   children: [
-  //     {
-  //       path: 'index',
-  //       name: 'index',
-  //       component: () => import('@/views/home/Home.vue'),
-  //       meta: {
-  //         title: '首页'
-  //       }
-  //     },
-
-  //   ]
-  // },
 ]
 
 const router = createRouter({
@@ -46,7 +27,7 @@ router.onError(error => {
   )
   if (isChunkLoadFailed) {
     // router.push('/404')
-    window.location.reload()
+    // window.location.reload()
   } else {
     console.log(error)
   }

@@ -14,7 +14,7 @@ const service: AxiosInstance = axios.create({
 service.interceptors.request.use(
   (config: AxiosRequestConfig) => {
     NProgress.start()
-    config.headers.token = Cookies.get('token')
+    // config.headers.token = Cookies.get('token')
     return config
   },
   (error: any) => {
