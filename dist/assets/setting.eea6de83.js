@@ -1,1 +1,0 @@
-import{m as o}from"./index.136adf48.js";import{a as t}from"./storage.6edf785c.js";const a=o("setting",{state:()=>{var e;return{opened:(e=t.get("sidebarStatus"))!=null?e:!0,mobile:!1}},getters:{},actions:{toggleSidebar(){this.opened=!this.opened,t.set("sidebarStatus",this.opened)},toggleMobile(e){this.mobile=e}}});export{a as u};

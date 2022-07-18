@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.5",
+    "@vitejs/plugin-legacy": "^2.0.0",
     "@vueuse/core": "^8.9.1",
     "@wangeditor/editor": "^5.1.5",
     "@wangeditor/editor-for-vue": "^5.1.12",
@@ -22,6 +23,7 @@
     "pinia": "^2.0.14",
     "sass": "^1.52.3",
     "sass-loader": "^13.0.0",
+    "vite-plugin-compress": "^2.1.1",
     "vue": "^3.2.25",
     "vue-router": "^4.0.16",
     "vuedraggable": "^4.1.0",
@@ -32,7 +34,9 @@
     "@types/mockjs": "^1.0.6",
     "@types/node": "^18.0.0",
     "@types/nprogress": "^0.2.0",
+    "@types/rollup-plugin-visualizer": "^4.2.1",
     "@vitejs/plugin-vue": "^2.3.3",
+    "rollup-plugin-visualizer": "^5.7.1",
     "typescript": "^4.7.4",
     "vite": "^2.9.9",
     "vue-tsc": "^0.35.0"
