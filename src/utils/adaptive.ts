@@ -19,7 +19,6 @@ export default function adaptive() {
         ).toFixed(5)
         scale.height = (window.innerHeight / baseHeight).toFixed(5)
         screenRef.value.style.transform = `scale(${scale.width},${scale.height}) translate(-50%,-50%)`
-        console.log(scale, 'scale');
       } else {
         scale.height = (
           window.innerWidth /

@@ -169,7 +169,6 @@ const getRoleList = async () => {
   const {
     data: { list },
   } = await userApi.getRoleList();
-  console.log(list, "data");
 
   state.roleList = list;
 };

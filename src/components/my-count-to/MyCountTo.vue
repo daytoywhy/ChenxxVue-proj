@@ -146,7 +146,6 @@ const start = () => {
   state.fontSize = fontSize;
   state.paused = false;
   state.rAF = requestAnimationFrame(count);
-  console.log(111);
 };
 const getCountDown = computed(() => {
   return props.startVal > props.endVal;
@@ -201,11 +200,7 @@ const count = (timeStamp: number) => {
 };
 
 onMounted(() => {
-  console.log(props.autoPlay, 333);
-
   if (props.autoPlay) {
-    console.log(22);
-
     start();
   }
   emit("mounted");

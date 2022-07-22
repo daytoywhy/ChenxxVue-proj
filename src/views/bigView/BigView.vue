@@ -11,7 +11,7 @@
         <div v-else
              class="big-view-body">
           <header>
-            <div class="go-home">回到首页</div>
+            <div class="go-home"></div>
           </header>
           <main class="big-view-content">
             <!-- <my-count-to :startVal="1"

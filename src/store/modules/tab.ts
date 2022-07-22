@@ -9,7 +9,7 @@ export const useTabStore = defineStore('tab', {
   }),
   getters: {
     getVisitedRouteList(): any {
-      return this.visitedRouteList.filter(route => route.name !== 'login')
+      return this.visitedRouteList.filter(route => route.name !== 'login' && route.name !== 'bigView')
     }
   },
   actions: {

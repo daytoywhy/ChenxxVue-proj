@@ -39,7 +39,6 @@ router.beforeEach(async (to, from, next) => {
     return
   }
   if (token) {
-    console.log(token, 'token');
     if (!asyncRouterFlag) {
       asyncRouterFlag++
       await regRouter()

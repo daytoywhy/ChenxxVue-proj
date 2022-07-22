@@ -98,7 +98,6 @@ const state = reactive({
 const getVerifyCode = () => {
   state.formRef.validateField("phoneNum", (valid: any) => {
     if (valid) {
-      console.log(111);
       state.smsSendBtn = true;
       const interval = window.setInterval(() => {
         if (state.time-- <= 0) {
