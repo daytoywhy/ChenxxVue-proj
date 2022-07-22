@@ -1,2 +1,4 @@
 node_modules
 stats.html
+package-lock.json
+yarn.lock
