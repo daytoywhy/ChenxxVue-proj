@@ -1,1 +1,0 @@
-import{_ as e,o as r,c as n}from"./index.8684c0a5.js";const o={};function s(c,t){return r(),n("div",null,"\u8FD9\u91CC\u662F\u5C55\u793A\u4E2A\u4EBA\u4E2D\u5FC3")}var a=e(o,[["render",s],["__file","/Users/chenxiangxiong/Desktop/\u9879\u76EE\u6C47\u603B/\u540E\u53F0\u7BA1\u7406\u7CFB\u7EDF/ChenxxVue-proj/src/views/home/PersonCenter.vue"]]);export{a as default};
