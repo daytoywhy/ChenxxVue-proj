@@ -72,6 +72,8 @@ export const formatRouter = (routerList: Array<RouterInfo>) => {
     }
     router.push(rNew)
   }
+  console.log(router);
+
   return router
 }
 

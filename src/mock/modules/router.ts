@@ -179,7 +179,24 @@ const mockList = [
         isNew: false,
         menuType: 1,
         children: null
-      }
+      },
+      {
+        id: '32',
+        parentId: '3',
+        path: 'calendar',
+        name: 'calendar',
+        component: 'calendar/Calendar.vue',
+        redirect: '',
+        title: '日历管控表',
+        icon: 'iconfont icon-edit',
+        frameSrc: '',
+        hideInMenu: false,
+        hideInBread: false,
+        sort: 1,
+        isNew: false,
+        menuType: 1,
+        children: null
+      },
     ]
   },
   // {
@@ -442,7 +459,7 @@ const mockList = [
     children: null
   },
   {
-    id: '7',
+    id: '8',
     parentId: '0',
     path: '/bigView',
     name: 'bigView',
@@ -457,7 +474,7 @@ const mockList = [
     isNew: false,
     menuType: 0,
     children: null
-  }
+  },
 ]
 
 const getRouterList = {

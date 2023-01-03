@@ -6,5 +6,17 @@ export default {
       url: 'article/getArticleList',
       method: 'get'
     })
-  }
+  },
+  getProjectList:()=>{
+    return request({
+      url:'calendar/getProjectList',
+      method:'get'
+    })
+  },
+  getCalendarList:()=>{
+    return request({
+      url:'calendar/getCalendarList',
+      method:'get'
+    })
+  },
 }

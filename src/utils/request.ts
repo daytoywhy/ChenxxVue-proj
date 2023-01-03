@@ -1,7 +1,7 @@
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios'
 import { ElMessage } from 'element-plus'
 import NProgress from './nProgress'
-import Cookies from 'js-cookie'
+
 
 const service: AxiosInstance = axios.create({
   timeout: 300000,

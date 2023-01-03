@@ -11,6 +11,8 @@ import appComponent from './components'
 import 'normalize.css/normalize.css'
 import 'element-plus/dist/index.css'
 import './styles/index.scss'
+import dayjs from 'dayjs'
+import weekOfYear from 'dayjs/plugin/weekOfYear'
 
 
 // 引入全局阿里图标库
@@ -29,6 +31,9 @@ import 'vxe-table/lib/style.css'
 import.meta.env.VITE_APP_MOCK == 'true' && import('./mock')
 
 const app = createApp(App)
+dayjs.extend(weekOfYear)
+app.config.globalProperties.$dayjs = dayjs
+
 
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component)
