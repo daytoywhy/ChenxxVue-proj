@@ -3,11 +3,13 @@
     <FullCalendar :options="calendarOptions"
                   ref="fullCalendarRef" />
                   <weekly ref="weeklyRef"/>
+                  <Action ref="actionRef" />
   </div>
 </template>
 
 <script setup lang="ts">
 import Weekly from './components/Weekly.vue'
+import Action from './components/Action.vue'
 import {articleApi } from '@/api'
 import { ref,reactive,toRefs, onMounted } from 'vue'
 import '@fullcalendar/core/vdom' // solve problem with Vite
@@ -17,6 +19,7 @@ import interactionPlugin from '@fullcalendar/interaction'
 import resourceTimelinePlugin from '@fullcalendar/resource-timeline'
 import listPlugin from '@fullcalendar/list'
 const weeklyRef = ref(null)
+const actionRef = ref(null)
 const FullCalendarRef = ref<InstanceType<typeof FullCalendar>>
 const state = reactive({
   calendarOptions:{
@@ -91,10 +94,10 @@ const state = reactive({
       }
     },
     select: (arg) => {
-      // this.handleEventClick(arg)
+      handleEventClick(arg)
     },
     eventClick: (arg) => {
-      // this.eventClick(arg)
+      eventClick(arg)
     },
     eventMouseEnter: function (arg) {
       if (arg.view.type == "listWeek" || arg.view.type == "listMonth") {
@@ -179,6 +182,14 @@ onMounted(()=>{
 
 const showWeekly = ()=>{
   weeklyRef.value.show()
+}
+
+const eventClick = (arg)=>{
+   actionRef.value.show('edit', arg)
+}
+
+const handleEventClick = (arg)=>{
+  actionRef.value.show('add', arg)
 }
 
 </script>
